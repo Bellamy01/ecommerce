@@ -25,6 +25,10 @@ public class Order {
     @ToString.Exclude  // This will add a foreign key column in the OrderItem table
     private List<OrderItem> items = new ArrayList<>();
 
+    public Order(String customerId) {
+        this.customerId = customerId;
+    }
+
     public void addItem(OrderItem item) {
         items.add(item);
     }
