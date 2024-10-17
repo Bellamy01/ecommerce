@@ -1,5 +1,6 @@
 package com.bella.ecommerce.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.*;
@@ -14,6 +15,7 @@ import java.util.Objects;
 @ToString
 @RequiredArgsConstructor
 public class PhysicalProduct extends OrderItem {
+    @Column(name = "shipping_weight", nullable = true)
     private double shippingWeight;
 
     public PhysicalProduct(String productName, double price, int quantity, double shippingWeight) {

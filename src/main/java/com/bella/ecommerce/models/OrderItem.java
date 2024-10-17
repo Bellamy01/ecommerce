@@ -20,17 +20,22 @@ import java.util.Objects;
         property = "type"
 )
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = PhysicalProduct.class, name = "physical"),
-        @JsonSubTypes.Type(value = DigitalProduct.class, name = "digital"),
-        @JsonSubTypes.Type(value = GiftCard.class, name = "gift_card")
+        @JsonSubTypes.Type(value = PhysicalProduct.class, name = "PHYSICAL"),
+        @JsonSubTypes.Type(value = DigitalProduct.class, name = "DIGITAL"),
+        @JsonSubTypes.Type(value = GiftCard.class, name = "GIFT_CARD")
 })
 public abstract class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "product_name", nullable = false)
     private String productName;
+
+    @Column(name = "price", nullable = false)
     private double price;
+
+    @Column(name = "quantity", nullable = false)
     private int quantity;
 
     public OrderItem(String productName, double price, int quantity) {

@@ -1,5 +1,6 @@
 package com.bella.ecommerce.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.*;
@@ -8,12 +9,13 @@ import org.hibernate.proxy.HibernateProxy;
 import java.util.Objects;
 
 @Entity
-@DiscriminatorValue("GIFTCARD")
+@DiscriminatorValue("GIFT_CARD")
 @Getter
 @Setter
 @ToString
 @RequiredArgsConstructor
 public class GiftCard extends OrderItem {
+    @Column(name = "recipient_email", nullable = true)
     private String recipientEmail;
 
     public GiftCard(String productName, double price, int quantity, String recipientEmail) {

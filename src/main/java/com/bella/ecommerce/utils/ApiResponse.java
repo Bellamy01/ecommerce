@@ -22,7 +22,13 @@ public class ApiResponse<T> {
     public ApiResponse() {
     }
 
-    public ApiResponse(T data,String message,HttpStatus status,Boolean success) {
+    public ApiResponse(String message, HttpStatus status, Boolean success) {
+        this.message = message;
+        this.status = status;
+        this.success = success;
+    }
+
+    public ApiResponse(T data, String message, HttpStatus status, Boolean success) {
         this.data = data;
         this.message=message;
         this.status =status;
