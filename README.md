@@ -249,19 +249,19 @@ src/main/java/com/bella/ecommerce/
     ```
 
 ###  Check if app is running
-![Check if app is running](images/6.png)
+<img src="images/6.png" alt="Check if app is running" width="450">
 
 ###  Create order in Postman
-![Create order in Postman](images/1.png)
+<img src="images/1.png" alt="Create order in postman" width="450">
 
 ###  Testing item creation in postman
-![Testing item creation in Postman](images/2.png)
+<img src="images/2.png" alt="Testing item creation in postman" width="450">
 
 ###  Add item to order in postman
-![Add item to order in Postman](images/3.png)
+<img src="images/3.png" alt="Add item to order in postman" width="450">
 
 ###  Retrieve order summary in postman
-![Retrieve order summary in Postman](images/5.png)
+<img src="images/5.png" alt="Retrieve order summary in postman" width="450">
 
 ## Conclusion
 
