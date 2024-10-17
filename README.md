@@ -27,7 +27,7 @@ This project is a basic order processing system for an e-commerce platform. It h
     - Method: `void sendGift()`.
 - **`Order`**:
     - Attributes: `orderId`, `customerId`, `List<OrderItem> items`.
-    - Method: `double calculateTotalCost()`.
+    - Method: `void addItem(OrderItem item)`, `double calculateTotalCost()`, `double calculateTotalShippingCost()`.
 - **`SummaryDTO`**:
     - Attributes: `orderId`, `totalCost`, `shippingCost`, `items`.
     - Represents the summary of an order with all calculated costs.
