@@ -248,17 +248,19 @@ src/main/java/com/bella/ecommerce/
     curl -X GET http://localhost:8090/orders/1
     ```
 
-## Images
-
-You can paste screenshots of the following sections here:
-
-1. **Database Setup**: Show a screenshot of your PostgreSQL setup with the `ordersystem` database.
-2. **Postman Tests**: Add screenshots of successful requests in Postman for creating an order, adding an item, and retrieving the order summary.
-
+###  Check if app is running
 ![Check if app is running](images/6.png)
+
+###  Create order in Postman
 ![Create order in Postman](images/1.png)
-![Test item creation in Postman](images/2.png)
+
+###  Testing item creation in postman
+![Testing item creation in Postman](images/2.png)
+
+###  Add item to order in postman
 ![Add item to order in Postman](images/3.png)
+
+###  Retrieve order summary in postman
 ![Retrieve order summary in Postman](images/5.png)
 
 ## Conclusion
