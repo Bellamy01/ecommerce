@@ -65,6 +65,7 @@ src/main/java/com/bella/ecommerce/
 └── dtos/
     ├── CreateOrderDTO.java
     └── CreateOrderItemDTO.java
+    └── OrderItemDTO.java
     └── SummaryDTO.java
 
 ```
@@ -136,6 +137,15 @@ src/main/java/com/bella/ecommerce/
                       "quantity": 2,
                       "shippingWeight": 1.5,
                       "totalPrice": 200000.0
+                  },
+                  {
+                      "type": "digital",
+                      "id": 2,
+                      "productName": "E-book: Mastering Java",
+                      "price": 15000.0,
+                      "quantity": 1,
+                      "totalPrice": 15000.0,
+                      "downloadLink": "http://example.com/downloads/12345"
                   }
               ]
           },
@@ -261,7 +271,7 @@ src/main/java/com/bella/ecommerce/
 <img src="images/3.png" alt="Add item to order in postman" width="450">
 
 ###  Retrieve order summary in postman
-<img src="images/5.png" alt="Retrieve order summary in postman" width="450">
+<img src="images/7.png" alt="Retrieve order summary in postman" width="450">
 
 ## Conclusion
 

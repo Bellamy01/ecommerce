@@ -25,7 +25,6 @@ public class CreateOrderItemDTO {
     @NotNull(message = "Quantity is required")
     @Min(value = 1, message = "Quantity must be greater than 0")
     private int quantity;
-    // not null if it is a physical product
     @Min(value = 0, message = "Shipping weight must be greater than or equal to 0")
     private Double shippingWeight;
     @ValidEmail(message = "Please provide a valid email")

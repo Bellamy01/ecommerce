@@ -1,6 +1,5 @@
 package com.bella.ecommerce.dtos;
 
-import com.bella.ecommerce.models.OrderItem;
 import lombok.Data;
 
 import java.util.List;
@@ -11,6 +10,5 @@ public class SummaryDTO {
     private double totalCost;
     private double totalShippingCost;
     private double grandTotal;
-    private List<OrderItem> items;
-
+    private List<OrderItemDTO> items;
 }
